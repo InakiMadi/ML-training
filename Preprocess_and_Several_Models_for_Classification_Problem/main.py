@@ -59,3 +59,8 @@ submission = pd.DataFrame({
 })
 submission.to_csv('submission.csv', index=False)
 print("Submission saved!")
+
+'''
+    Possible future work for Preprocess:
+    Getting the Deck from Cabin's first letter (however, many are null).
+'''
