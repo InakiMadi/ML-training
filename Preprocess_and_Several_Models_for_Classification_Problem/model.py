@@ -127,6 +127,6 @@ def model(X_train,X_test,y_train,y_test):
     print(f"Best model that fits the data: {best_model}.", end=separation)
 
     '''
-        Conclusion: We select SVM as the model.
+        Conclusion: We select the best model.
     '''
     return best_model
