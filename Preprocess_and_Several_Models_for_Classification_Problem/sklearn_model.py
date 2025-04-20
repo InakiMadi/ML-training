@@ -20,7 +20,7 @@ pd.set_option('display.max_colwidth', 20)  # Show full content of each column
 # Better ending line for prints
 separation = "\n" + "-" * 50 + "\n"
 
-def model(X_train,X_test,y_train,y_test):
+def sklearn_model(X_train,X_test,y_train,y_test):
     '''
         Modelling.
     '''

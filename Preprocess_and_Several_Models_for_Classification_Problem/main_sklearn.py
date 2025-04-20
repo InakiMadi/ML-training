@@ -1,5 +1,5 @@
 from preprocess import preprocess
-from model import model
+from sklearn_model import sklearn_model
 # Data Analysis and Wrangling
 import pandas as pd
 # Machine Learning
@@ -45,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     Modelling.
 '''
 # We get the model that fits best the data, from a selection of models.
-model = model(X_train,X_test,y_train,y_test)
+model = sklearn_model(X_train,X_test,y_train,y_test)
 
 '''
     Conclusion.
@@ -57,8 +57,8 @@ submission = pd.DataFrame({
     'PassengerId': validation_PassengerId,
     'Survived': y_validation_pred
 })
-submission.to_csv('submission.csv', index=False)
-print("Submission saved!")
+submission.to_csv('sklearn_submission.csv', index=False)
+print("(sklearn) Submission saved!")
 
 '''
     Possible future work for Preprocess:
